@@ -40,7 +40,6 @@ TEST_CASE("Lock multiple threads", "[recursive_shared_mutex]")
                std::scoped_lock l2{ mutex };
                std::this_thread::sleep_for( std::chrono::milliseconds( 5 ) );
             }
-            
         } );
     }
     for ( auto& thread: threads ) {
